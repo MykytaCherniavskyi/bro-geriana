@@ -1,0 +1,579 @@
+@media all and (max-width: 1439px) {
+  body {
+    font-size: 14px;
+  }
+  .header-help {
+    &__help-buttons {
+      display: flex;
+      margin-left: 1.875rem;
+      justify-content: space-around;
+    }
+    &__btn-help {
+      width: 9.31rem;
+    }
+    &__btn-call {
+      width: 6.25rem;
+    }
+  }
+  .login {
+    &__block {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 2.43rem 0 0;
+      li {
+        width: 4rem;
+        + li {
+          margin-left: 0.93rem;
+        }
+      }
+
+    }
+  }
+
+  .header-help__help-buttons {
+    @-moz-document url-prefix() {
+      position: relative;
+      left: 5.6rem;
+    }
+  }
+
+  .btn-big {
+    width: 13.125rem;
+  }
+
+  .working-title {
+    h2 {
+      font-size: 3rem;
+    }
+  }
+
+  .working-list {
+    margin: 0;
+    & > div {
+      display: flex;
+      position: relative;
+      &:nth-child(2) {
+        margin: 3rem 0 2rem 0;
+        padding-left: 6rem;
+        left: 3.5rem;
+      }
+      &:last-child {
+        margin-top: 4rem;
+        padding-left: 5rem;
+        left: 4rem;
+      }
+    }
+    .list-content {
+      position: relative;
+      &::after {
+        content: '';
+        top: 1.8rem;
+        left: 15.375rem;
+      }
+      &_second {
+        &::after {
+          top: 2.25rem;
+          left: -16.375rem;
+        }
+      }
+      &_third {
+        &::after {
+          top: 2.25rem;
+        }
+      }
+      &_four {
+        &::after {
+          content: none;
+        }
+      }
+
+    }
+
+  }
+
+  .icon {
+    margin-top: .5rem;
+  }
+
+
+  .client-info {
+    margin-right: 0;
+  }
+
+  .strong-pages {
+    &__title {
+      position: relative;
+      left: 4rem;
+      h2 {
+        font-size: 4rem;
+      }
+    }
+  }
+
+  .footer-info {
+    h4 {
+      font-size: 1.325rem;
+    }
+  }
+
+  .icon-social {
+    width: 1.4rem;
+    height: 1.4rem;
+    background-size: cover;
+  }
+
+  .follow-us {
+    &__rights {
+      font-size: 0.7rem;
+    }
+  }
+
+  .footer-list {
+    ul {
+      margin: 0;
+    }
+    li {
+      font-size: .9rem;
+    }
+  }
+}
+
+@media all and (min-width: 992px) and (max-width: 1200px) {
+  .header-help {
+    &__help-buttons {
+      display: flex;
+      margin-left: 1.875rem;
+      justify-content: space-around;
+    }
+    &__btn-help {
+      width: 9.31rem;
+      font-size: .8rem;
+    }
+    &__btn-call {
+      width: 6.25rem;
+      font-size: .8rem;
+    }
+  }
+  .login {
+    &__block {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 2.43rem 0 0;
+      li {
+        width: 4rem;
+        + li {
+          margin-left: 0.93rem;
+        }
+      }
+
+    }
+  }
+
+  .btn-big {
+    width: 12.125rem;
+    padding: 1.2rem 0 1.2rem 0;
+  }
+
+  .working-title {
+    h2 {
+      font-size: 3rem;
+    }
+  }
+
+  .working-list {
+    margin-left: 0;
+    & > div {
+      display: flex;
+      position: static;
+      &:nth-child(2) {
+        margin: 0;
+        padding-left: 4rem;
+      }
+      &:last-child {
+        margin-top: 0;
+        padding-left: 4rem;
+      }
+    }
+    .list-content {
+      position: relative;
+      &::after {
+        content: none;
+      }
+      &_second {
+
+      }
+      &_third {
+      }
+      &_four {
+      }
+
+    }
+
+  }
+
+
+  .client-info {
+    margin-right: 0;
+  }
+
+  .strong-pages {
+    &__title {
+      position: static;
+      h2 {
+        font-size: 4rem;
+      }
+    }
+  }
+
+  .footer-info {
+    h4 {
+      font-size: 1.325rem;
+    }
+  }
+
+  .icon-social {
+    width: 1.4rem;
+    height: 1.4rem;
+    background-size: cover;
+  }
+
+  .follow-us {
+    &__rights {
+      font-size: 0.7rem;
+    }
+  }
+
+  .footer-list {
+    ul {
+      margin: 0;
+    }
+    li {
+      font-size: .9rem;
+    }
+  }
+}
+
+@media all and (max-width: 991px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 1.2rem;
+  }
+  h5 {
+    font-size: 1rem;
+  }
+
+
+  .header-help {
+    &__help-buttons {
+      display: none;
+    }
+  }
+
+  .btn-big {
+    width: 11.125rem;
+  }
+
+  .categories-specialist__title {
+    font-size: 2rem;
+  }
+
+  .specialist-list__item {
+    h4 {
+      font-size: 1.2rem;
+    }
+  }
+
+  .working-title {
+    h2 {
+      margin-top: 7.25rem;
+      font-size: 3.5rem;
+    }
+  }
+
+
+  .working-list {
+    padding-left: 6rem;
+    > div {
+      &:nth-child(2) {
+        position: static;
+        padding-left: 9rem;
+      }
+      &:last-child {
+        position: static;
+        padding-left: 9rem;
+      }
+    }
+  }
+
+  .our-clients__title {
+    font-size: 2rem;
+  }
+
+  .client-space {
+    display: none;
+  }
+
+  .clients-comments {
+    .row {
+      & > div {
+        &:nth-child(3),&:nth-child(5) {
+          .client-say {
+            margin: 1rem 0;
+          }
+        }
+      }
+    }
+  }
+
+  .strong-pages {
+    &__title {
+      h2 {
+        font-size: 3rem;
+      }
+      position: static;
+    }
+  }
+
+  .strong-list {
+    font-size: 0.85rem;
+  }
+
+  .btn-big {
+    padding: 1.162rem 0 1.162rem 0;
+  }
+
+  .know-more {
+    &__title {
+      font-size: 2rem;
+    }
+    &__text {
+      font-size: 1rem;
+    }
+  }
+
+  .follow-us {
+    flex-direction: column;
+    &__text {
+      margin: 0 0 .5rem 0;
+    }
+    &__social-wrapper {
+      display: inline-flex;
+    }
+    &__rights {
+      text-align: center;
+    }
+  }
+
+  .footer-info {
+    padding: 4.18rem 0 3.87rem 0;
+    .logo {
+      margin-top: 1rem;
+    }
+  }
+
+}
+
+@media all and (max-width: 768px) {
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.7rem;
+  }
+
+  .login {
+    &__block {
+      margin-right: 1rem;
+      li + li {
+        margin: 0;
+      }
+    }
+  }
+
+  .hero-text {
+    margin-top: 8rem;
+  }
+
+
+  .categories-specialist__title {
+    font-size: 1.7rem;
+  }
+
+  .specialist-list {
+    &__item {
+      h4 {
+        margin: 1.687rem 0 1.25rem 0;
+      }
+      &.second,&.four {
+        h4 {
+          margin: 1.687rem 0 1.25rem 0;
+        }
+      }
+      &.four {
+        margin: 0;
+      }
+    }
+    &__item {
+      margin-bottom: 2rem;
+    }
+  }
+
+
+
+  .working-list {
+    display: flex;
+    padding-left: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    > div {
+      &:nth-child(2) {
+        padding-left: 0;
+      }
+      &:last-child {
+        padding-left: 0;
+      }
+    }
+    .list-content {
+      position: relative;
+      &::after {
+        content: none;
+      }
+    }
+  }
+
+  .our-clients__title {
+    font-size: 1.7rem;
+  }
+
+  .client-info {
+    margin-right: 3.1rem;
+  }
+
+  .clients-comments {
+    .row {
+      & > div {
+        & > .client-say {
+          margin-bottom: 1rem;
+          &:last-child {
+            .client-say {
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .strong-pages {
+    padding-top: 7.37rem;
+    &__title {
+      margin-bottom: 3rem;
+      h2 {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .footer-list {
+    text-align: center;
+    h4 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    margin-bottom: 2rem;
+  }
+
+
+}
+
+@media all and (max-width: 576px) {
+  .logo {
+    object {
+      width: 12.5rem;
+    }
+  }
+
+  .login {
+    padding-top: .3rem;
+    &__block{
+      display: block;
+      li {
+        width: 3.5rem;
+      }
+    }
+  }
+
+  .client-say__text {
+    max-width: 100%;
+  }
+
+  .client-info {
+    margin: 0;
+  }
+
+  .working-title h2 {
+    font-size: 2.6rem;
+  }
+
+}
+
+@media all and (max-width: 480px) {
+  .login {
+    padding-top: .7rem;
+    &__block {
+      display: none;
+    }
+  }
+
+  .hero-text {
+    h1 {
+      font-size: 2.8rem;
+    }
+    h2 {
+      font-size: 2.5rem;
+    }
+  }
+
+  .working-title h2 {
+    font-size: 2.5rem;
+  }
+
+  .our-clients__title {
+    line-height: 1;
+  }
+
+  .strong-pages__title h2 {
+    font-size: 2.5rem;
+  }
+
+  .know-more__title {
+    font-size: 1.8rem;
+    line-height: 1;
+  }
+
+  .footer-list {
+    h4 {
+      font-size: 1rem;
+    }
+    li {
+      font-size: .8rem;
+    }
+  }
+}
