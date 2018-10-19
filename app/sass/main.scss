@@ -16,11 +16,66 @@ body {
   background-color: $def-color;
 }
 
+
+
 header {
+  position: absolute;
+  top: 0;
+  height: 90px;
   z-index: 10;
+  width: 100%;
+  transition: all .5s;
+  .logo {
+    object:last-child {
+      display: none;
+    }
+  }
+  > div {
+    width: 1440px;
+  }
   & .row {
     padding-top: .8rem;
   }
+}
+
+.hidden-svg {
+  display: none;
+}
+
+.header-scroll {
+  background-color: $def-color;
+  .header-help {
+    &__btn-help {
+      border-color: $blue;
+      color: $blue;
+    }
+    &__btn-call {
+      display: none;
+    }
+  }
+  ul li {
+    color: $black;
+  }
+  .logo {
+    object:first-child {
+      display: none;
+    }
+    object:last-child {
+      display: block;
+    }
+  }
+  .menu {
+    color: $black;
+    &__gamburger {
+      span {
+        background-color: $black;
+      }
+      &::before,&::after {
+        background-color: $black;
+      }
+    }
+  }
+
 }
 
 ul {
@@ -173,8 +228,9 @@ h5 {
 }
 
 .hero {
-  height: 47.5rem;
-  background: url('../img/hero1.jpg')no-repeat center center;
+  height: 100vh;
+  min-height: 46.87rem;
+  background: url('../img/hero1.jpg')no-repeat top;
   background-size: cover;
   //&::before {
   //  content: '';
@@ -188,7 +244,10 @@ h5 {
 }
 
 .hero-text {
-  margin-top: 9.937rem;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  //padding-top: 9.937rem;
   h1 {
     margin: 0 0 1.375rem 0;
   }
@@ -229,13 +288,19 @@ h5 {
 
 
 .specialist-list {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
   &__item {
     display: flex;
     flex-direction: column;
-    align-items: center;
     text-align: center;
+    justify-content: space-between;
+    flex: 1 1 15.62rem;
+    margin: 2.81rem;
     h4 {
-        margin: 2.687rem 0 1.25rem 0;
+        margin: 1.87rem 0;
         font-size: 1.375rem;
         font-weight: 700;
         line-height: 1.182;
@@ -244,16 +309,6 @@ h5 {
     p {
       margin: 0;
       color: $black;
-    }
-    &.second{
-       h4 {
-         margin: 3.2rem 0 3.2rem 0;
-       }
-     }
-    &.four {
-      h4 {
-        margin: 3.0rem 0 3.0rem 0;
-      }
     }
   }
 }

@@ -13,44 +13,44 @@
 </head>
 <body>
 
-
-    <section class="hero">
-        <header class="container">
-            <div class="row">
-                <div class="col-6">
-                    <div class="header-help">
-                        <div class="logo">
-                            <object data="img/svg/logo-3.svg" type="image/svg+xml"></object>
-                        </div>
-                        <div class="header-help__help-buttons">
-                            <button class="header-help__btn-help btn-default hidden">
-                                <i class="fas fa-question-circle"></i>
-                                <span>Help Center</span>
-                            </button>
-                            <button class="header-help__btn-call btn-default">
-                                <span>Call us</span>
-                            </button>
-                        </div>
+    <header class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div class="header-help">
+                    <div class="logo">
+                        <object data="img/svg/logo-3.svg" type="image/svg+xml"></object>
+                        <object data="img/svg/logo-3Blue.svg" type="image/svg+xml"></object>
                     </div>
-                </div>
-                <div class="col-3 offset-3">
-                    <div class="login">
-                        <ul class="login__block">
-                            <li>Sign Up</li>
-                            <li>Log in</li>
-                        </ul>
-                        <nav class="menu">
-                            <div class="menu__gamburger">
-                                <span></span>
-                            </div>
-                            <span>Menu</span>
-                        </nav>
+                    <div class="header-help__help-buttons">
+                        <button class="header-help__btn-help btn-default hidden">
+                            <i class="fas fa-question-circle"></i>
+                            <span>Help Center</span>
+                        </button>
+                        <button class="header-help__btn-call btn-default">
+                            <span>Call us</span>
+                        </button>
                     </div>
                 </div>
             </div>
-        </header>
-
-
+            <div class="col-3 offset-3">
+                <div class="login">
+                    <ul class="login__block">
+                        <li>Sign Up</li>
+                        <li>Log in</li>
+                    </ul>
+                    <nav class="menu">
+                        <div class="menu__gamburger">
+                            <span></span>
+                        </div>
+                        <span>Menu</span>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+    <section class="hero">
         <div class="hero-text">
             <div class="container">
                 <h1>Znajdź  opiekuna</h1>
@@ -71,36 +71,26 @@
                     Specjaliści Różnych Kategorii
                 </h3>
                 <div class="specialist-list">
-                    <div class="row">
-                        <div class="col-md-3 col-sm-12">
-                            <article class="specialist-list__item">
-                                <object class="specialist-list__image" data="img/svg/1.svg" type="image/svg+xml"></object>
-                                <h4>Opiekunowie z doświadczeniem</h4>
-                                <p>10,000 zarejestrowanych opiekunów czeka na bezpośredni kontakt z poszukującymi opieki</p>
-                            </article>
-                        </div>
-                        <div class="col-md-3 col-sm-12">
-                            <article class="specialist-list__item second">
-                                <object class="specialist-list__image" data="img/svg/2.svg" type="image/svg+xml"></object>
-                                <h4>Masażyści</h4>
-                                <p>10,000 zarejestrowanych opiekunów czeka na bezpośredni kontakt z poszukującymi opieki</p>
-                            </article>
-                        </div>
-                        <div class="col-md-3 col-sm-12">
-                            <article class="specialist-list__item">
-                                <object class="specialist-list__image" data="img/svg/nurses.svg" type="image/svg+xml"></object>
-                                <h4>Pielęgniarki i opiekunowie medyczni</h4>
-                                <p>10,000 zarejestrowanych opiekunów czeka na bezpośredni kontakt z poszukującymi opieki</p>
-                            </article>
-                        </div>
-                        <div class="col-md-3 col-sm-12">
-                            <article class="specialist-list__item four">
-                                <object class="specialist-list__image" data="img/svg/therapy.svg" type="image/svg+xml"></object>
-                                <h4>Fizjoterapeuci</h4>
-                                <p>10,000 zarejestrowanych opiekunów czeka na bezpośredni kontakt z poszukującymi opieki</p>
-                            </article>
-                        </div>
-                    </div>
+                    <article class="specialist-list__item">
+                        <object class="specialist-list__image" data="img/svg/1.svg" type="image/svg+xml"></object>
+                        <h4>Opiekunowie z doświadczeniem</h4>
+                        <p>10,000 zarejestrowanych opiekunów czeka na bezpośredni kontakt z poszukującymi opieki</p>
+                    </article>
+                    <article class="specialist-list__item second">
+                        <object class="specialist-list__image" data="img/svg/2.svg" type="image/svg+xml"></object>
+                        <h4>Masażyści</h4>
+                        <p>10,000 zarejestrowanych opiekunów czeka na bezpośredni kontakt z poszukującymi opieki</p>
+                    </article>
+                    <article class="specialist-list__item">
+                        <object class="specialist-list__image" data="img/svg/nurses.svg" type="image/svg+xml"></object>
+                        <h4>Pielęgniarki i opiekunowie medyczni</h4>
+                        <p>10,000 zarejestrowanych opiekunów czeka na bezpośredni kontakt z poszukującymi opieki</p>
+                    </article>
+                    <article class="specialist-list__item four">
+                        <object class="specialist-list__image" data="img/svg/therapy.svg" type="image/svg+xml"></object>
+                        <h4>Fizjoterapeuci</h4>
+                        <p>10,000 zarejestrowanych opiekunów czeka na bezpośredni kontakt z poszukującymi opieki</p>
+                    </article>
                 </div>
             </div>
         </div>
@@ -327,6 +317,32 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        window.onload = (e) => {
+
+            const header = document.getElementsByTagName('header')[0];
+            const headerHeight = header.getBoundingClientRect().height;
+
+            document.addEventListener('scroll', (e) => {
+
+                const pageY = window.pageYOffset;
+                console.log(pageY);
+                if (pageY > headerHeight) {
+                    header.style.position = 'fixed';
+                    header.classList.add('header-scroll');
+                } else {
+                    header.style.position = 'absolute';
+                    header.classList.remove('header-scroll');
+                }
+
+            });
+
+        };
+
+
+
+    </script>
 
 </body>
 </html>
